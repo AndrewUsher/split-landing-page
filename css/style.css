@@ -1,0 +1,115 @@
+html,
+body {
+  font-family: 'Open Sans', sans-serif;
+  height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+  padding: 0;
+  width: 100vw;
+}
+h1 {
+  font-size: 4rem;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+.button {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  height: 2.5rem;
+  padding-top: 1.3rem;
+  width: 15rem;
+  text-align: center;
+  color: #fff;
+  border: 0.2rem solid #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  transform: translateX(-50%);
+}
+.split.left .button:hover {
+  background-color: rgba(0,89,26,0.3);
+  border-color: rgba(0,89,26,0.3);
+}
+.split.right .button:hover {
+  background-color: rgba(26,0,89,0.3);
+  border-color: rgba(26,0,89,0.3);
+}
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #333;
+}
+.split {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+.split.left {
+  left: 0;
+  background: url("../img/forest.jpeg") center center no-repeat;
+  background-size: cover;
+}
+.split.left:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(0,111,32,0.7);
+}
+.split.right {
+  right: 0;
+  background: url("../img/ocean.jpeg") center center no-repeat;
+  background-size: cover;
+}
+.split.right:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(32,0,111,0.4);
+}
+.split.left,
+.split.right,
+.split.right:before,
+.split.left:before {
+  transition: all 800ms ease-in-out;
+}
+.hover-right .right {
+  width: 75%;
+}
+.hover-right .left {
+  width: 25%;
+}
+.hover-right .left:before {
+  z-index: 2;
+}
+.hover-left .left {
+  width: 75%;
+}
+.hover-left .right {
+  width: 25%;
+}
+.hover-left .right:before {
+  z-index: 2;
+}
+@media (max-width: 800px) {
+  h1 {
+    font-size: 2rem;
+  }
+  .button {
+    width: 12rem;
+  }
+}
+@media (max-height: 700px) {
+  .button {
+    top: 70%;
+  }
+}
