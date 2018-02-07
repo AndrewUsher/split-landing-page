@@ -5,7 +5,7 @@ $rightBackgroundColor = rgba(#20006f, 40%)
 $rightButtonHoverColor = rgba(darken($rightBackgroundColor, 20%), 30%)
 $hoverWidth = 75%
 $hoverOppositeWidth = 25%
-$speed = 800ms
+$slideSpeed = 700ms
 
 html,
 body
@@ -89,7 +89,7 @@ h1
 .split.right,
 .split.right:before,
 .split.left:before
-  transition: all $speed ease-in-out;
+  transition: width $slideSpeed cubic-bezier(0.68, -0.55, 0.42, 2.07);
 
 .hover-right .right
   width: $hoverWidth;
