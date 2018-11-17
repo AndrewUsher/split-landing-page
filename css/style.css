@@ -7,9 +7,12 @@ body {
   padding: 0;
   width: 100vw;
 }
+h1,
+.button {
+  color: #f3f3f3;
+}
 h1 {
   font-size: 4rem;
-  color: #fff;
   position: absolute;
   left: 50%;
   top: 20%;
@@ -25,8 +28,7 @@ h1 {
   padding-top: 1.3rem;
   width: 15rem;
   text-align: center;
-  color: #fff;
-  border: 0.2rem solid #fff;
+  border: 0.2rem solid #f3f3f3;
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;

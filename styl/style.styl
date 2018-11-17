@@ -6,6 +6,7 @@ $rightButtonHoverColor = rgba(darken($rightBackgroundColor, 20%), 30%)
 $hoverWidth = 75%
 $hoverOppositeWidth = 25%
 $slideSpeed = 700ms
+$textColor = #f3f3f3
 
 html,
 body {
@@ -17,9 +18,12 @@ body {
   width: 100vw;
 }
 
+h1, .button {
+  color: $textColor;
+}
+
 h1 {
   font-size: 4rem;
-  color: #fff;
   position: absolute;
   left: 50%;
   top: 20%;
@@ -36,8 +40,7 @@ h1 {
   padding-top: 1.3rem;
   width: 15rem;
   text-align: center;
-  color: #fff;
-  border: .2rem solid #fff;
+  border: .2rem solid $textColor;
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
