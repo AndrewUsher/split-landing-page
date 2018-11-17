@@ -106,28 +106,32 @@ h1 {
   transition: width $slideSpeed cubic-bezier(0.68, -0.55, 0.42, 2.07);
 }
 
-.hover-right .right {
-  width: $hoverWidth;
+.hover-right {
+  .right {
+    width: $hoverWidth;
+  }
+
+  .left {
+    width: $hoverOppositeWidth;
+
+    &:before {
+      z-index: 2;  
+    }
+  }
 }
 
-.hover-right .left {
-  width: $hoverOppositeWidth;
-}
+.hover-left {
+  .left {
+    width: $hoverWidth;
+  }
 
-.hover-right .left:before {
-  z-index: 2;
-}
+  .right {
+    width: $hoverOppositeWidth;
 
-.hover-left .left {
-  width: $hoverWidth;
-}
-
-.hover-left .right {
-  width: $hoverOppositeWidth;
-}
-
-.hover-left .right:before {
-  z-index: 2;
+    &:before {
+      z-index: 2
+    }
+  }
 }
 
 @media (max-width: 800px) {
