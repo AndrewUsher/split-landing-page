@@ -4,5 +4,11 @@
   "main": "index.js",
   "repository": "https://github.com/AndrewUsher/split-landing-page.git",
   "author": "Andrew Usher <andrew.usher@autozone.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "semantic-release": "17.2.2"
+  },
+  "scripts": {
+    "release": "semantic-release"
+  }
 }
