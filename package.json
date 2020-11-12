@@ -1,0 +1,8 @@
+{
+  "name": "split-landing-page",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/AndrewUsher/split-landing-page.git",
+  "author": "Andrew Usher <andrew.usher@autozone.com>",
+  "license": "MIT"
+}
